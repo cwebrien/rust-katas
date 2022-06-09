@@ -16,9 +16,9 @@ fn main() {
 }
 
 fn complex_add(a: (f64, f64), b: (f64, f64)) -> (f64, f64) {
-    return (a.0 + b.0, a.1 + b.1);
+    (a.0 + b.0, a.1 + b.1)
 }
 
 fn complex_multiply(a: (f64, f64), b: (f64, f64)) -> (f64, f64) {
-    return (a.0 * b.0 - a.1 * b.1, a.0 * b.1 + a.1 * b.0);
+    (a.0 * b.0 - a.1 * b.1, a.0 * b.1 + a.1 * b.0)
 }
