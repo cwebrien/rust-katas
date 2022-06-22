@@ -10,7 +10,7 @@ fn main() {
         "The area of the rectangle is {} square pixels.",
         area(&rect)
     );
-    println!("The width was {}", rect.width);
+    println!("The width and height were: {}, {}", rect.width, rect.height);
 }
 
 fn area(rectangle: &Rectangle) -> u32 {
