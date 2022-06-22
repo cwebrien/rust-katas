@@ -1,7 +1,7 @@
 #[derive(Debug)]
 struct Rectangle {
     height: u32,
-    width: u32
+    width: u32,
 }
 
 impl Rectangle {
@@ -15,13 +15,18 @@ impl Rectangle {
 }
 
 fn main() {
-    let rect1: Rectangle = Rectangle{height: 30, width: 50};
-    let rect2: Rectangle = Rectangle{height:20, width: 40};
+    let rect1: Rectangle = Rectangle {
+        height: 30,
+        width: 50,
+    };
+    let rect2: Rectangle = Rectangle {
+        height: 20,
+        width: 40,
+    };
 
     println!("rect1 is {:?} with area {}", rect1, rect1.area());
     println!("rect2 is {:?} with area {}", rect2, rect2.area());
 
     println!("rect1 can hold rect2? {}", rect1.can_hold(&rect2));
     println!("rect2 can hold rect1? {}", rect2.can_hold(&rect1));
-
 }
