@@ -12,6 +12,13 @@ impl Rectangle {
     fn can_hold(&self, other: &Rectangle) -> bool {
         self.width > other.width && self.height > other.height
     }
+
+    fn square(dim: u32) -> Rectangle {
+        Rectangle {
+            height: dim,
+            width: dim,
+        }
+    }
 }
 
 fn main() {
@@ -19,10 +26,7 @@ fn main() {
         height: 30,
         width: 50,
     };
-    let rect2: Rectangle = Rectangle {
-        height: 20,
-        width: 40,
-    };
+    let rect2: Rectangle = Rectangle::square(20);
 
     println!("rect1 is {:?} with area {}", rect1, rect1.area());
     println!("rect2 is {:?} with area {}", rect2, rect2.area());
