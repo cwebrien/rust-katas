@@ -8,6 +8,7 @@ fn main() {
     let rect: Rectangle = Rectangle{height: 30, width: 50};
 
     println!("rect is {:?} with area {}", rect, area(&rect));
+    dbg!(&rect);
 }
 
 fn area(rectangle: &Rectangle) -> u32 {
